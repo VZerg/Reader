@@ -1,1 +1,6 @@
 D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\BashReader.exe.config
+D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\BashReader.exe
+D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\BashReader.pdb
+D:\Documents\Visual Studio\BashReader\BashReader\obj\Debug\BashReader.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio\BashReader\BashReader\obj\Debug\BashReader.exe
+D:\Documents\Visual Studio\BashReader\BashReader\obj\Debug\BashReader.pdb
