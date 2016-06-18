@@ -11,7 +11,7 @@ namespace BashReader
         static void Main(string[] args)
         {
             PageParser newParse = new PageParser();
-            newParse.ParsePage(1154,1104);
+            newParse.ParsePage();
         }
     }
 }
