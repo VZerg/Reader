@@ -12,6 +12,7 @@ namespace BashReader
         {
             PageParser newParse = new PageParser();
             newParse.ParsePage();
+            
         }
     }
 }
