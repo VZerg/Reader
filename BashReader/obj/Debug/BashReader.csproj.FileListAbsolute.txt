@@ -4,3 +4,7 @@ D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\BashReader.pdb
 D:\Documents\Visual Studio\BashReader\BashReader\obj\Debug\BashReader.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio\BashReader\BashReader\obj\Debug\BashReader.exe
 D:\Documents\Visual Studio\BashReader\BashReader\obj\Debug\BashReader.pdb
+D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\EntityFramework.dll
+D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\EntityFramework.xml
+D:\Documents\Visual Studio\BashReader\BashReader\bin\Debug\EntityFramework.SqlServer.xml

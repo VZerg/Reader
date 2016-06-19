@@ -10,8 +10,10 @@ namespace BashReader
     {
         static void Main(string[] args)
         {
-            PageParser newParse = new PageParser();
-            newParse.ParsePage();
+            //PageParser newParse = new PageParser();
+            //newParse.ParsePage();
+           
+            Console.ReadLine();
             
         }
     }
