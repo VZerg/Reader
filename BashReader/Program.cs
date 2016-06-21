@@ -10,11 +10,15 @@ namespace BashReader
     {
         static void Main(string[] args)
         {
-            //PageParser newParse = new PageParser();
+           // PageParser newParse = new PageParser();
             //newParse.ParsePage();
-           
-            Console.ReadLine();
-            
+            Context db = new Context();
+            Post[] newPost = new Post[(db.Posts.Count() - 1)];
+            //newPost = db.Postsj;
+            //db.Posts.Attach(newPost);
+            //db.Posts.Remove(newPost);
+            db.SaveChanges();
+
         }
     }
 }

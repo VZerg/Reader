@@ -52,9 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WorkToDBbyEntity.cs" />
-    <Compile Include="WorkToDBbySQL.cs" />
-    <Compile Include="Models.cs" />
+    <Compile Include="Entity\PostsRepository.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\BaseRepository.cs" />
+    <Compile Include="SQLWork.cs" />
+    <Compile Include="Post.cs" />
     <Compile Include="PageParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +66,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
