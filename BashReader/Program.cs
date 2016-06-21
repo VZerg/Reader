@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BashReader.Data;
 
-namespace BashReader
+namespace Entity
 {
     class Program
     {
         static void Main(string[] args)
         {
-           // PageParser newParse = new PageParser();
+            // PageParser newParse = new PageParser();
             //newParse.ParsePage();
-            Context db = new Context();
-            Post[] newPost = new Post[(db.Posts.Count() - 1)];
-            //newPost = db.Postsj;
-            //db.Posts.Attach(newPost);
-            //db.Posts.Remove(newPost);
-            db.SaveChanges();
+            PostsRepository db = new PostsRepository();
+            Post N = new Post();
+            N.PostId = 439834;
+            Console.Write(db.Get(N.PostId));
+            Console.ReadLine();
+            
 
         }
     }
