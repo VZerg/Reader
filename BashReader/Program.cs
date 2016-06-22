@@ -7,11 +7,13 @@ namespace Entity
     {
         static void Main(string[] args)
         {
-             PageParser newParse = new PageParser();
-             newParse.ParsePage();
-             Console.WriteLine();
-            
-
+            //PostsRepository repository = new PostsRepository();
+            //Post n = new Post();
+            //n.PostId = 439834;
+            //repository.Create(n);
+            ////repository.Delete();
+            PageParser newParse = new PageParser();
+            newParse.ParsePage();
         }
     }
 }

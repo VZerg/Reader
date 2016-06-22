@@ -134,16 +134,12 @@ namespace Entity
                         postDevid.PostName = name.Remove(name.IndexOfAny(symbol.ToCharArray()));
                     }
                     repository.Create(postDevid);
-                    
-                    
-
                 }
             }
             catch
             {
             }
         }
-
 
     }
 }
