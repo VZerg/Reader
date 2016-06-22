@@ -12,7 +12,7 @@ namespace Entity
 {
     class PageParser
     { 
-       // PostsRepository repository = new PostsRepository();
+        PostsRepository repository = new PostsRepository();
         /// <summary>
         ///
         /// </summary>
@@ -21,7 +21,7 @@ namespace Entity
         public void ParsePage()
         {
             WebClient client = new WebClient();
-            for (int index = LastPage(); index >= (LastPage() - 50); index--)
+            for (int index = LastPage(); index >= (LastPage() - 10); index--)
             {
                 try
                 {
@@ -33,9 +33,16 @@ namespace Entity
                 }
                 Console.WriteLine(index.ToString());
             }
-           // WorkToDBbySQL newConnect = new WorkToDBbySQL();
+            
+            foreach (var reader in repository.GetAll())
+            {
+                Console.WriteLine(String.Format("Индивидуальный индифекатор записи = {0}," + '\n'
+                                                + " Номер поста = {1}, Рэйтинг = {2}, Дата публикации = {5},"
+                                                + '\n' + " {3}," + '\n' + " {4}" + '\n',
+                                                reader.Id, reader.PostId, reader.Rating, reader.PostName, reader.PostText, reader.PublishDate));
+            }
             //newConnect.ReadAllItemsFromDB();
-           // newConnect.DeletAllItemsFromDB();
+            // newConnect.DeletAllItemsFromDB();
             Console.ReadKey();
         }
 
@@ -126,11 +133,8 @@ namespace Entity
                         string name = post.Remove(0, (post.IndexOf("text") + 6));
                         postDevid.PostName = name.Remove(name.IndexOfAny(symbol.ToCharArray()));
                     }
-
-                    //repository.Create(postDevid);
-                    SQLWork newConnect = new SQLWork();
-                    //if (newConnect.UppDateAllItemsFromDB(postDevid))
-                    //  newConnect.AddItemToDB(postDevid);
+                    repository.Create(postDevid);
+                    
                     
 
                 }
